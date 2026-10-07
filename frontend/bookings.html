@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Bookings - StayEase</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            StayEase
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="rooms.html">
+                Rooms
+            </a>
+
+            <a href="booking.html">
+                Book Room
+            </a>
+
+            <a
+                href="bookings.html"
+                class="active"
+            >
+                Bookings
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+
+            <h1>
+                Booking Management
+            </h1>
+
+            <p>
+                View and manage all hotel bookings.
+            </p>
+
+        </section>
+
+
+        <section class="booking-list-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <h2>
+                        All Bookings
+                    </h2>
+
+                    <button
+                        id="refreshBookings"
+                        class="secondary-btn"
+                    >
+                        Refresh
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="bookingMessage"
+                    class="message"
+                ></div>
+
+
+                <div
+                    id="bookingsContainer"
+                    class="bookings-container"
+                >
+
+                    <p class="loading">
+                        Loading bookings...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 StayEase Hotel Booking System
+        </p>
+
+    </footer>
+
+
+    <script src="js/bookings.js"></script>
+
+</body>
+
+</html>

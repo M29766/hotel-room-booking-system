@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Room - StayEase</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            StayEase
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="rooms.html">
+                Rooms
+            </a>
+
+            <a href="booking.html" class="active">
+                Book Room
+            </a>
+
+            <a href="bookings.html">
+                Bookings
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+
+            <h1>
+                Book a Room
+            </h1>
+
+            <p>
+                Enter guest details and select your room.
+            </p>
+
+        </section>
+
+
+        <section class="form-section">
+
+            <div class="form-container booking-container">
+
+                <div id="bookingMessage" class="message"></div>
+
+
+                <form id="bookingForm">
+
+
+                    <div class="form-group">
+
+                        <label for="guestName">
+                            Guest Name
+                        </label>
+
+                        <input type="text" id="guestName" placeholder="Enter guest name" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bookingRoom">
+                            Select Room
+                        </label>
+
+                        <select id="bookingRoom" required>
+
+                            <option value="">
+                                Loading rooms...
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="bookingCheckIn">
+                                Check-in Date
+                            </label>
+
+                            <input type="date" id="bookingCheckIn" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="bookingCheckOut">
+                                Check-out Date
+                            </label>
+
+                            <input type="date" id="bookingCheckOut" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="primary-btn full-width">
+                        Confirm Booking
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 StayEase Hotel Booking System
+        </p>
+
+    </footer>
+
+
+    <script src="js/booking.js"></script>
+
+</body>
+
+</html>

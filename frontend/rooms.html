@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rooms - StayEase</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            StayEase
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="rooms.html"
+                class="active"
+            >
+                Rooms
+            </a>
+
+            <a href="booking.html">
+                Book Room
+            </a>
+
+            <a href="bookings.html">
+                Bookings
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <h1>
+                Manage Rooms
+            </h1>
+
+            <p>
+                Add, view, update and delete hotel rooms.
+            </p>
+
+        </section>
+
+
+        <!-- Add Room -->
+
+        <section class="form-section">
+
+            <div class="form-container">
+
+                <h2>
+                    Add New Room
+                </h2>
+
+                <div
+                    id="roomMessage"
+                    class="message"
+                ></div>
+
+
+                <form id="roomForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Room Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="roomNumber"
+                                placeholder="Example: 101"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Room Type
+                            </label>
+
+                            <select
+                                id="roomType"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Type
+                                </option>
+
+                                <option value="Single">
+                                    Single
+                                </option>
+
+                                <option value="Double">
+                                    Double
+                                </option>
+
+                                <option value="Deluxe">
+                                    Deluxe
+                                </option>
+
+                                <option value="Suite">
+                                    Suite
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Price per Night
+                            </label>
+
+                            <input
+                                type="number"
+                                id="roomPrice"
+                                placeholder="Example: 2500"
+                                min="0"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Availability
+                            </label>
+
+                            <select id="availability">
+
+                                <option value="Available">
+                                    Available
+                                </option>
+
+                                <option value="Unavailable">
+                                    Unavailable
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        Add Room
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Room List -->
+
+        <section class="rooms-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <h2>
+                        All Rooms
+                    </h2>
+
+                    <button
+                        id="refreshRooms"
+                        class="secondary-btn"
+                    >
+                        Refresh
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="roomsContainer"
+                    class="room-grid"
+                >
+
+                    <p class="loading">
+                        Loading rooms...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 StayEase Hotel Booking System
+        </p>
+
+    </footer>
+
+
+    <script src="js/rooms.js"></script>
+
+</body>
+
+</html>
