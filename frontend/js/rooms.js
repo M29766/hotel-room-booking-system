@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://hotel-room-booking-system-dzox.onrender.com/";
 
 const roomForm = document.getElementById("roomForm");
 const roomsContainer = document.getElementById("roomsContainer");
